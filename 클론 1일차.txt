@@ -1,0 +1,110 @@
+1. 처음 세팅
+- vsc에서 새파일을 만들때, html 파일로 저장할 수 있다. 
+다만, 기본적으로 갖춰진 html 태그들은 어떻게???
+====>>> 흠,, 일단은 VS에서 만들고 VSC에서 실행하는 걸로 대체.
+
+
+<!DOCTYPE html> - 문서 타입은 html 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+
+---->> 왜 이것들이 자동적으로 나올까? 
+
+2. body에서 본격적으로 뼈대 구축
+
+- header, nav, content, footer 순으로 
+
+3. 각 부분에서 <div id> 나 <div class> 해줄 것
+
+
+
+4. <div> 밑에서 <ul> ----> <li> 아니면 그냥 계속 div ㄱㄱ 
+---->>> div의 의미가 레이아웃에서 무슨 의미일까???
+
+
+5. 이미지랑 하이퍼링크를 어떻게 동시에 구현? HTML에서 하는건가, CSS에서 하는건가 헷갈림
+
+-- a href="주소" 해놓고 >< 사이에 이미지를 넣어야하나???
+
+-- <img src="" alt="이미지가 표시되지 않음"><a href=""> 이렇게 하면 되나???
+<p><img src="네이버상단배너.png" alt="이미지가 표시되지않음"><a href=https://campaign.naver.com/naverdetails/whale/?=main&wpid=RydDy7 target="_self"></a></p>
+
+이렇게했는데도 안되는 걸보니... margin, padding으로 글자클릭 하는 것처럼 해놓고 그림을 앞으로 빼야하나???
+
+주의: ul li 하게 되면 옆에 o 생긴다. (순서 없이)
+
+
+
+6. 검색창 만들기
+
+<div class="search"> 
+                    <input type="text" /> ##입력하는 것은 문자이다. 
+                    <button type="submit" class="btn_search"><span class="txt_sw">표시될거</span></button>
+
+##submit은 제출. class=btn_search는 css에서 다루기위함. span class는 뭐지?? span은 div와 달리 수평이라는 뜻인디...
+
+흠,,,, 검색창을 돋보기 이미지로 하려고하는데,,,, 이것도 이미지 하이퍼링크 연장선상이네
+
+<button type="submit" class="search_image"><span class="img"><img src="검색돋보기.png"></span></button>
+이렇게 했더니, 되네??? 대강.... submit은 있어야하고,,, class는 그냥 이름 붙여준거, span class는 타입을 정하는 건가???
+그리고 <img src=""> 말고 다른 건 할 수 없는건가?
+
+##주의: <input type="" /> 이다. 
+           html 에서 {}, ; 같은 건 없다. 
+           img src를 하면 alt무조건해줘야하는듯..
+
+
+보니가 <button type----->은 그냥 버튼 누르는 것까지만이지 아직 검색한 거랑 연동이 안되는 모양인듯하다. 
+
+의문: 
+1. div 다음에 p해도 괜찮은건가??
+2. 주소 때문에 길어지는 경우에는 a=주소로 해놓고 이렇게 표현해도 되지않나?
+3. div id 해놓고 또 div 하는 이유는 자리 맞추기 위함인가?
+
+
+
+----------------------nav------------
+
+toggle---->> 
+ <input id="toggle" type="checkbox" /> ##input의 아이디 설정해주고, 타입 골라주기
+ <label class="right" for="toggle" onclick=""><img src="img/menu.png" alt="menu" /></label>
+
+
+<input id="toggle" type="checkbox" /> 
+            <label class="right" for="toggle" onclick="">더보기</label> 그냥 이거해주면 ㅁ더보기 만 나오네....
+
+
+뭐지???
+
+style에서 
+ #toggle { display:none; }
+
+ #gnb_wrap {  display:none; border:10px solid #333333; }
+ #toggle:checked ~ #wrap > #gnb_wrap { display:block; }
+
+html에서
+<input id="toggle" type="checkbox" /> 
+<label class="right" for="toggle" onclick="">더보기</label>
+
+하고 gnb list 까지 만들었는데, 그냥 더보기만 나오네....
+
+
+***ul 같은 리스트들은 ul li 등으로 float:left 해줘야
+
+의문: 지금 서로 낑겨서 나오는데 이걸 어떻게 해결해야할까???
+
+
+
+이미지 출처가 바뀌면 출처복사해서 왼쪽에 붙이고 /붙이면 되는듯.
+
+------------------- footer-----------------
+
+ul li 하고 css에서 o없애기
+
+근데  <li><a href="" target="_self"></a>  </li>  ----> 이것 안에 채워넣는거 일일히 노가다해야하나???
+
+##주의: 하이퍼링크 글자는 </a>왼쪽에다가 하는 것이다. target="_self"가 default구나.
+
+
