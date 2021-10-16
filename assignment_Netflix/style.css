@@ -1,0 +1,118 @@
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body{
+    background-image: url("netflix-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}  
+
+
+.logo{
+    padding: 20px;
+    width: 20%; 
+    height: 15%;
+}
+
+header button,header select{
+    position: absolute;
+    top: 3%;
+    width: 5%;
+    border-radius: 15px;
+}
+
+header select{
+    right: 12%;
+    height: 5%;
+}
+
+header button:last-of-type{
+    right: 5%;
+    line-height: 2.2rem;
+}
+
+content, login, footer{
+    text-align: center;
+}
+
+content{
+    color: white;
+    
+}
+
+content>div{
+    height: 60%;
+    position: sticky;
+    top: 30%;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    
+}
+
+content>form{
+    display:flex;
+}
+
+content h1{
+    font-weight: bold;
+}
+
+login{          
+    
+}
+
+.putEmail{
+    line-height: 4rem;
+    text-align: center;
+    width: 30%;
+}
+
+
+footer{
+    height: 10%;
+    color: white;
+    
+}
+
+footer h4{
+    position: fixed;
+    bottom: 10%;
+    left: 40%; 
+}
+
+form>button{
+    width: 10%;
+    line-height: 4rem;
+    font-size: 1.3rem;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+//position: fixed;
+// bottom: 0;
+//left: 40%;
+
+// 선택자: 설명s
+// * : 기본 세팅
+// body : body에 배경화면 적용(이미지 선택, 반복x, 꺠지지않는 선에서 최대한 cover), 뷰포트를 꽉 채우게 높이 설정
+// .loge : padding을 통해 여유 공간 확보, 높낮이를 반응형으로 만들고자.
+// 
+// header button들 : position absolute를 통해 위치 배정
+// content, login, footer 를 가운데 정렬
+// content의 글짜 색깔 white, 행자간 높이 3rem, 높이 설정
+// footer : 높이 설정, 글짜 색깔 white, 뷰포트를 기준으로 하기위해 position: fixed 과 bottom 및 left 설정
+
+
+
+// div 대신 wrap 이런 걸로 쓰면 블록이 제대로 안 생기는 문제가..
+// 문제가 스크롤로 글자 크기 조절하면 이상해지는 문제가...
