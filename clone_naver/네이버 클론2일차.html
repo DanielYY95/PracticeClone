@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+    <style>
+        * { margin:0; padding:0; }
+        li { list-style:none }
+        a { text-decoration:none; }
+
+
+## 네이버 상단
+
+        #header wrap {
+           width:1000px; height:200px;
+        
+        }
+
+
+## 네이버 검색창
+
+        #search wrap {
+            width:1000px; height:150px;
+            overflow:hidden;
+
+        }
+
+        #naverhome{
+            float:left;
+            width:400px; height:100px; 
+        }
+
+        #naverresearch{
+            
+            float:left;
+            width:500px; height:100px; 
+
+        }
+
+
+
+## 네이버 nav
+
+        #nav_wrap {
+            
+
+        }   ##text-align의 center 고려중
+ 
+        #nav_lnb {
+            width:1500px;
+            height:200px;
+
+
+
+        }
+
+
+        #nav_lnb ul{
+            width:1000px; margin:0 auto;
+
+
+        }
+
+        #nav_lnb ul li{   
+            
+            float:left;
+            margin-left:15px;
+        }
+        
+        #nav_lnb ul li a{   
+            
+
+        } ##display:block; 고려중
+
+
+
+
+
+        #toggle { display:none; }
+
+        #gnb_wrap {  display:none; border:10px solid #333333; }
+        #toggle:checked ~ #wrap > #gnb_wrap { display:block; }
+
+
+
+        #footer_list ul li{
+            float:left;
+            margin-left:10px;
+
+
+        }
+
+## 본문내용
+ 
+        #content {
+           
+        }
+
+        #content section1{
+            
+
+        }
+
+        #content section1 div{
+            
+        }
+
+        
+        #content content_ad{
+            
+        }
+
+        #content Myprofile{
+            
+        }
+
+
+
+        #content section2{
+            
+        }
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <header>
+        <div id="header wrap">
+            <div id="upper_ad">
+                <p><a href="https://campaign.naver.com/naverdetails/whale/?=main&wpid=RydDy7" target="_self">
+                    <img src="C:\Users\Daniel Yang\Desktop\네이버클론/네이버상단배너.png" alt="이미지가 표시되지않음" style="width:100%"></p></a>
+
+                
+            </div>
+            
+            <div id="search wrap"> 
+                <div id="naverhome">
+                    <p><a href="https://www.naver.com/" target="_self">
+                        <img src="C:\Users\Daniel Yang\Desktop\네이버클론/네이버홈.png" alt="이미지가 표시되지않음" ></a></p>
+
+                </div>
+
+                <div id="naversearch"> 
+                    <input type="text" />
+                    <button type="submit" class="search_image"><span class="img"><img src="C:\Users\Daniel Yang\Desktop\네이버클론/검색돋보기.png"></span></button>
+
+
+
+                </div>
+
+
+            </div>
+
+
+            </div>
+             
+                 
+
+           
+
+        </div>
+
+
+
+        
+
+
+
+    </header>
+
+
+    <nav>
+        <div="nav_wrap">
+            <div id="nav_lnb">
+                <ul>
+                    <li><a href="https://mail.naver.com/">메일</a></li>
+                    <li><a href="https://section.cafe.naver.com/">카페 </a></li>
+                    <li><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">블로그 </a></li>
+                    <li><a href="https://kin.naver.com/">지식iN</a></li>
+                    <li><a href="https://shopping.naver.com/">쇼핑</a></li>
+                    <li><a href="https://shoppinglive.naver.com/home">쇼핑LIVE</a></li>
+                    <li><a href="https://order.pay.naver.com/home">Pay</a></li>
+                    <li><a href="https://tv.naver.com/">TV</a></li>
+                    <li><a href="https://dict.naver.com/">사전</a></li>
+                    <li><a href="https://news.naver.com/">뉴스</a></li>
+                    <li><a href="https://finance.naver.com/">증권</a></li>
+                    <li><a href="https://land.naver.com/">부동산</a></li>
+                    <li><a href="https://map.naver.com/v5/">지도</a></li>
+                    <li><a href="https://vibe.naver.com/">VIBE</a></li>
+                    <li><a href="https://book.naver.com/">책</a></li>
+                    <li><a href="https://comic.naver.com/index.nhn">웹툰</a></li>
+                    <input id="toggle" type="checkbox" /> 
+                    <label class="right" for="toggle" onclick="">더보기</label>
+
+            </div>
+
+            <div id="gnb_wrap">
+                <div id="gnb">
+                    <ul>
+                        <li><a href="#none">gnb1</a></li>
+                        <li><a href="#none">gnb2</a></li>
+                        <li><a href="#none">gnb3</a></li>
+                        <li><a href="#none">gnb4</a></li>
+                        <li><a href="#none">gnb5</a></li>
+                        <li><a href="#none">gnb6</a></li>
+                        <li><a href="#none">gnb7</a></li>
+                        <li><a href="#none">gnb8</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    
+
+        
+    </nav>
+
+    
+    <content>
+        <div id="section1">
+            <div id="content_ad">광고</div>
+            <div id="Myprofile">프로필</div>
+
+            
+
+        </div>
+
+        <div id="section2">
+            <div id="newspaper">신문</div>
+
+
+        </div>
+
+
+
+    </content>
+
+
+
+    <footer>
+        <div id="footer_list">
+            <ul>
+                <li><a href="https://www.navercorp.com/">회사소개</a></li>
+                <li><a href="https://recruit.navercorp.com/naver/recruitMain">인재채용</a></li>
+                <li><a href="https://www.navercorp.com/naver/proposalGuide">제휴제안</a></li>
+                <li><a href="https://policy.naver.com/policy/service.html">이용약관</a></li>
+                <li><a href="https://policy.naver.com/policy/privacy.html">개인정보처리방침</a></li>
+                <li><a href="https://policy.naver.com/policy/youthpolicy.html">청소년보호정책</a></li>
+                <li><a href="https://policy.naver.com/policy/spamcheck.html">네이버 정책</a></li>
+                <li><a href="https://help.naver.com/">고객센터</a></li>
+                <li><a href="https://www.navercorp.com/">ⓒ NAVER Corp.</a></li>
+                
+            </ul>
+
+    
+
+
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+#줄바꿈: <br />
