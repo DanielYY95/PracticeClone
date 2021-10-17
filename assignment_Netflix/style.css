@@ -11,91 +11,115 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    
+    width: 100vw;
 }  
 
 
 .logo{
     padding: 20px;
-    width: 20%; 
+    width: 13rem;
     height: 15%;
 }
 
 header button,header select{
     position: absolute;
     top: 3%;
-    width: 5%;
     border-radius: 15px;
+    font-size: 0.5rem;
 }
 
 header select{
     right: 12%;
-    height: 5%;
+    height: 40px;
+    width: 60px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    margin-right: 2rem;
 }
 
-header button:last-of-type{
+header button{
     right: 5%;
-    line-height: 2.2rem;
+    height: 40px;
+    width: 50px;
 }
 
 content, login, footer{
     text-align: center;
 }
 
-content{
+content, footer{
     color: white;
     
 }
 
 content>div{
-    height: 60%;
-    position: sticky;
-    top: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 1.8rem;
     line-height: 4rem;
     
-}
-
-content>form{
-    display:flex;
 }
 
 content h1{
     font-weight: bold;
 }
 
-login{          
-    
+content>form{
+    display: flex;
+    justify-content: center;
+    line-height: 4rem;
 }
+
 
 .putEmail{
     line-height: 4rem;
     text-align: center;
-    width: 30%;
-}
-
-
-footer{
-    height: 10%;
-    color: white;
-    
-}
-
-footer h4{
-    position: fixed;
-    bottom: 10%;
-    left: 40%; 
+    min-width: 35%;
+    margin-right: 0px;
 }
 
 form>button{
-    width: 10%;
+    min-width: 10%;
     line-height: 4rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    padding: 0;
+    margin-left: 0px;
 }
+
+footer{
+    height: 10%;
+}
+
+footer h4{
+    position: absolute;
+    bottom: 5%;
+    left: 40%; 
+}
+
 
 .red {
     background-color: red;
     color: white;
+}
+
+@media only all and (max-width: 800px) {
+    content>form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+  
+
+  form>button{
+    margin-left: auto;
+  }
+
+  .putEmail{
+    margin-right: auto;
+}
 }
 
 //position: fixed;
@@ -116,3 +140,6 @@ form>button{
 
 // div 대신 wrap 이런 걸로 쓰면 블록이 제대로 안 생기는 문제가..
 // 문제가 스크롤로 글자 크기 조절하면 이상해지는 문제가...
+
+// background: none; 으로 하면 투명한 요소가 될 수 있다.
+// margin과 width를 다 rem단위로 쓰네 => logo의 경우 width: 30% 대신 13rem으로 쓰니, 계속 크기가 고정되네
