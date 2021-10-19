@@ -1,6 +1,6 @@
 
 *{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
@@ -16,32 +16,34 @@ body{
 
 
 .logo{
-    padding: 20px;
-    width: 13rem;
+    padding: 35px;
+    width: 23rem;
     height: 15%;
+}
+
+header{
+    height: 20%;
 }
 
 header button,header select{
     position: absolute;
     top: 3%;
     border-radius: 15px;
-    font-size: 0.5rem;
+    font-size: 1rem;
+    height: 60px;
+    width: 100px;
 }
 
 header select{
     right: 12%;
-    height: 40px;
-    width: 60px;
     background-color: black;
     border: 1px solid white;
     color: white;
-    margin-right: 2rem;
+    margin-right: 40px;
 }
 
 header button{
     right: 5%;
-    height: 40px;
-    width: 50px;
 }
 
 content, login, footer{
@@ -54,16 +56,16 @@ content, footer{
 }
 
 content>div{
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.8rem;
-    line-height: 4rem;
-    
+    font-size: 2.5rem;
+    line-height: 5.5rem;
+    word-break:keep-all;
 }
 
-content h1{
+content h1, content h1>span{
     font-weight: bold;
 }
 
@@ -71,55 +73,89 @@ content>form{
     display: flex;
     justify-content: center;
     line-height: 4rem;
+    margin-top: 70px;
 }
 
 
 .putEmail{
     line-height: 4rem;
     text-align: center;
-    min-width: 35%;
-    margin-right: 0px;
+    min-width: 800px;
+    width: 30%;
+    font-size: 1.5rem;
 }
 
 form>button{
-    min-width: 10%;
+    min-width: 150px;
+    width: 7%;
     line-height: 4rem;
     font-size: 1.1rem;
     padding: 0;
-    margin-left: 0px;
+    font-size: 1.5rem;
 }
 
 footer{
-    height: 10%;
+    height: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
-
-footer h4{
-    position: absolute;
-    bottom: 5%;
-    left: 40%; 
-}
-
 
 .red {
     background-color: red;
     color: white;
 }
 
-@media only all and (max-width: 800px) {
-    content>form{
+@media (min-width: 980px) and (max-width: 1300px){
+    content>div{
+        font-size: 2.3rem;
+        line-height: 4rem;   
+        height: 40%;
+    }
+}
+
+@media only all and (max-width: 980px) {
+    .logo{
+        width: 18rem;
+    }
+
+    header button,header select{
+        height: 50px;
+        width: 70px;
+        font-size: 0.8rem;
+    }
+
+    content>div{
+        font-size: 1.8rem;
+        line-height: 4rem;   
+        height: 40%;
+    }
+
+    content span{ 
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-  
+    
+    h4>span, h6>span{
+        line-height: 0.8rem;
+    }
+                                  
+    content>form{
+        flex-direction: column;
+    }
+    
+    .putEmail{
+        min-width: 150px;
+        width: 80%;
+    }
 
-  form>button{
-    margin-left: auto;
-  }
 
-  .putEmail{
-    margin-right: auto;
-}
+    form>button{
+        width: 30%;
+    }
+
+
 }
 
 //position: fixed;
