@@ -1,10 +1,10 @@
 <HTML 설계>
 
-1. Header부분: 왼쪽 Netflix 로고, 오른쪽에 언어 toggle(button), 로그인 button
-2. h1, h4, h6
-3. Input창 + button과 enter
-4. 배경화면 전쳬
-5. footer
+1. Header부분: 왼쪽 Netflix 로고, 오른쪽에 언어 toggle(button), 로그인 button // 반응형. position: absolute; 활용 but flex를 사용할 걸... 
+2. h1, h4, h6 // flex 사용, justify 와 align-item 사용
+3. Input창 + button // 반응형으로. flex와 행열 정렬 교체. justify-content: center; 
+4. 배경화면 전쳬 // vw, vh 활용
+5. footer // flex를 사용하고 end를 통해 맨 밑으로 배치
 
 
 
