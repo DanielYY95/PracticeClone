@@ -1,9 +1,10 @@
 <HTML 설계>
 
 1. Header부분: 왼쪽 Netflix 로고, 오른쪽에 언어 toggle(button), 로그인 button
-2. h2, h3, h4
+2. h1, h4, h6
 3. Input창 + button과 enter
 4. 배경화면 전쳬
+5. footer
 
 
 
