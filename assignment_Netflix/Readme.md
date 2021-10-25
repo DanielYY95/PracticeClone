@@ -18,3 +18,17 @@
 5. 쓸데없이 login 태그를 만들었더니.... 더 힘드네.. 그냥 content에 합쳤다...
 6. 글짜 굵기 어떻게 못하나??
 7. ::before and ::after 를 어떻게 적용해야할지?
+8. line-height는 영역을 침범을 하는듯 .... 개발자도구에서 잘 살펴봐야한다. 
+9. justify-content 이 작동되지않는 경우
+- justify-content only has an effect if there's space left over after your flex items have flexed to absorb the free space. In most/many cases, there won't be any free space left, and indeed justify-content will do nothing.
+- justify- content: center가 먹히지않는 경우,
+display: flex; flex-direction: column; align-items: center; ==> 간혹, justify-content가 먹히기도 하지만, 이게 국룰이다.
+- justify-content property (works on main axis only) flex-direction이 바뀌면 main axis도 바뀐다.
+https://stackoverflow.com/questions/35106814/why-isnt-justify-content-centering-my-divs
+====> flex로 container의 가로 세로 가운데로 배치하고 싶다면 justify-content:center와 align-items: center 모두 사용!
+
+<개선 점>
+1. absolute 하고, bottom: 0 이렇게 하는 것보다 차라리 display: flex;   justify-content: center;  이게 낫겠다. 
+2. 저기 select와 로그인 button을 position: absolute 말고 div 로 묶어서 flex 해도 될듯\
+
+
